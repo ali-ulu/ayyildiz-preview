@@ -82,6 +82,7 @@ nav .btn{padding:9px 16px}
 .st{position:absolute;inset:0;opacity:0;transform:translateY(24px);transition:opacity .5s,transform .5s;pointer-events:none}
 .st.on{opacity:1;transform:none;pointer-events:auto}
 .st .label{color:var(--red)}
+.turn.dark .st .label{color:#ff5a5f} /* brand red is too dark on black */
 .st h2{font-size:clamp(56px,8vw,128px);margin:10px 0 16px}
 .st p{max-width:440px;opacity:.82}
 .spec{display:flex;gap:28px;margin-top:22px;flex-wrap:wrap}
@@ -380,7 +381,7 @@ function drawTurn(p){
   const even=Math.floor(t/2)*2, odd=Math.floor((t+1)/2)*2-1;
   ff.style.backgroundImage=`url(${STONES[Math.min(steps,even)].img})`;
   fb.style.backgroundImage=`url(${STONES[clamp(odd,0,steps)].img})`;
-  if(idx!==cur){cur=idx;sts.forEach((el,i)=>el.classList.toggle('on',i===idx));turn.style.backgroundColor=STONES[idx].bg;turn.style.color=STONES[idx].fg;cnt.textContent=`0${idx+1} / 0${STONES.length}`;}
+  if(idx!==cur){cur=idx;sts.forEach((el,i)=>el.classList.toggle('on',i===idx));turn.style.backgroundColor=STONES[idx].bg;turn.style.color=STONES[idx].fg;turn.classList.toggle('dark',STONES[idx].fg==='#ffffff');cnt.textContent=`0${idx+1} / 0${STONES.length}`;}
 }
 const ribbon=$('.ribbon'), heroBg=$('#heroBg'), hero=$('.hero'), nav=$('#nav'), qImg=$('#qImg');
 function frame(){
