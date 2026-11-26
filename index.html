@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ayyıldız Marble — Grey Marble from Our Own Quarry since 1987</title>
+<meta name="description" content="Ayyıldız Marble, İscehisar / Afyonkarahisar. Rising Star grey marble from our own 250-hectare quarry: blocks, slabs and cut-to-size, exported to five continents since 1996.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/s3.webp">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Ayyıldız Mermer Ltd. Şti.","alternateName":"Ayyıldız Marble","url":"https://ayyildizmarble.com/","foundingDate":"1987","founder":{"@type":"Person","name":"Necmettin Ayyıldız"},"email":"info@ayyildizmarble.com","telephone":"+90 272 341 28 80","address":{"@type":"PostalAddress","streetAddress":"Organize Sanayi Bölgesi 3. Cadde 4. Sokak No:11","addressLocality":"İscehisar","addressRegion":"Afyonkarahisar","addressCountry":"TR"},"sameAs":["https://instagram.com/ayyildizmarble","https://tr-tr.facebook.com/ayyildizmarble"]}
+</script>
+<style>
+:root{
+  --ink:#0d0d0d; --ink2:#171717; --stone:#d9d7d2; --paper:#f1f0ed; --mute:#5c5a56; --mute-d:#a3a09a;
+  --red:#c8161d; --line:rgba(13,13,13,.14); --line-d:rgba(255,255,255,.14);
+  --disp:"Big Shoulders Display",Impact,sans-serif; --sans:"Archivo",system-ui,sans-serif;
+  --pad:clamp(20px,4vw,64px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:#fff;font-family:var(--sans);line-height:1.5;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.disp{font-family:var(--disp);font-weight:800;text-transform:uppercase;letter-spacing:-.005em;line-height:.86}
+.label{font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+
+.ribbon{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:60;background:rgba(13,13,13,.86);color:#eee;backdrop-filter:blur(10px);font-size:12px;padding:8px 14px;border-radius:999px;white-space:nowrap;border:1px solid var(--line-d)}
+.ribbon b{color:#ff5a5f;font-weight:600}
+.ribbon{transition:opacity .4s}.ribbon.hide{opacity:0;pointer-events:none}
+
+nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px var(--pad);transition:background .4s}
+nav.solid{background:rgba(13,13,13,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-d)}
+nav .logo img{height:34px;width:auto;background:#fff;padding:4px 8px}
+nav ul{display:flex;gap:28px;list-style:none;font-size:14px}
+nav ul a{text-decoration:none;opacity:.8}
+nav ul a:hover{opacity:1}
+.right{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid currentColor;transition:background .25s,color .25s,border-color .25s}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+.btn.red:hover{background:#fff;border-color:#fff;color:var(--ink)}
+nav .btn{padding:9px 16px}
+.lang{font:600 13px var(--sans);color:#fff;background:none;border:1px solid var(--line-d);width:42px;height:38px;cursor:pointer}
+.lang:hover{border-color:#fff}
+@media(max-width:900px){nav ul{display:none}}
+@media(max-width:480px){nav .btn{display:none}}
+
+/* hero */
+.hero{position:relative;height:180vh}
+.hero .stick{position:sticky;top:0;height:100vh;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url(img/s3.webp) center/cover;transform:scale(1.25);will-change:transform}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.1) 35%,rgba(0,0,0,.8))}
+.hero .copy{position:absolute;left:var(--pad);right:var(--pad);bottom:clamp(110px,16vh,170px)}
+.hero h1{font-size:clamp(64px,13.5vw,240px)}
+.hero h1 span{color:var(--red)}
+.hero p{max-width:460px;margin-top:22px;color:rgba(255,255,255,.86)}
+.stats{position:absolute;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-d);background:rgba(13,13,13,.55);backdrop-filter:blur(8px)}
+.stats div{padding:16px var(--pad);border-right:1px solid var(--line-d)}
+.stats div:last-child{border:0}
+.stats b{display:block;font-family:var(--disp);font-weight:700;font-size:clamp(28px,3.4vw,48px);line-height:1}
+.stats small{color:rgba(255,255,255,.75);font-size:13px}
+@media(max-width:700px){.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.stats div{padding:12px 20px}}
+
+/* turntable */
+.turn{position:relative;height:440vh;transition:background-color .6s}
+.turn .stick{position:sticky;top:0;height:100vh;overflow:hidden}
+.turn .grid{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.slabwrap{position:relative;height:100%;perspective:1600px}
+.slab{position:absolute;left:50%;top:50%;width:300px;height:500px;margin:-250px 0 0 -150px;transform-style:preserve-3d;will-change:transform}
+.slab .f{position:absolute;inset:0;background-size:cover;background-position:center;backface-visibility:hidden;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.slab .b{transform:rotateY(180deg)}
+.slab .e{position:absolute;top:0;width:24px;height:500px;left:138px;background:#8d8a84;filter:brightness(.8)}
+.slab .e.r{transform:rotateY(90deg) translateZ(150px)}
+.slab .e.l{transform:rotateY(-90deg) translateZ(150px)}
+.slab .f.fr{transform:translateZ(12px)}
+.slab .f.b{transform:rotateY(180deg) translateZ(12px)}
+.shadow{position:absolute;left:50%;bottom:8%;width:360px;height:40px;margin-left:-180px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.45),transparent)}
+.info{padding-right:var(--pad);position:relative;height:340px}
+.st{position:absolute;inset:0;opacity:0;transform:translateY(24px);transition:opacity .5s,transform .5s;pointer-events:none}
+.st.on{opacity:1;transform:none;pointer-events:auto}
+.st .label{color:var(--red)}
+.st h2{font-size:clamp(56px,8vw,128px);margin:10px 0 16px}
+.st p{max-width:440px;opacity:.82}
+.spec{display:flex;gap:28px;margin-top:22px;flex-wrap:wrap}
+.spec div{border-top:1px solid currentColor;padding-top:8px;min-width:120px;opacity:.9}
+.spec small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.7}
+.count{position:absolute;z-index:2;top:96px;left:var(--pad);right:var(--pad);display:flex;justify-content:space-between}
+.count b{font-weight:500}
+@media(max-width:900px){
+  .turn .grid{grid-template-columns:1fr;grid-template-rows:58% 42%}
+  .slab{transform-origin:center;scale:.62}
+  .info{padding:0;height:100%}
+  .st{inset:0 var(--pad)}
+  .hero .copy{bottom:175px}.hero p{font-size:15px;margin-top:14px}
+  .st h2{font-size:clamp(46px,13vw,72px);margin:6px 0 8px}
+  .st p{font-size:14px}
+  .spec{gap:16px;margin-top:12px}.spec div{min-width:90px;font-size:13px}
+}
+
+/* quarry */
+.quarry{position:relative;background:var(--paper);color:var(--ink);padding:clamp(90px,12vw,170px) var(--pad) 0}
+.quarry .top{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end}
+.quarry h2{font-size:clamp(56px,9vw,150px)}
+.quarry h2 span{color:var(--red)}
+.quarry .top p{color:var(--mute);max-width:460px}
+.qimg{margin:56px calc(var(--pad)*-1) 0;height:80vh;overflow:hidden;position:relative}
+.qimg img{width:100%;height:125%;object-fit:cover;transform:translateY(var(--py,0))}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}
+.facts div{padding:28px 0;border-right:1px solid var(--line);padding-right:20px}
+.facts div+div{padding-left:24px}
+.facts div:last-child{border:0}
+.facts b{font-family:var(--disp);font-weight:700;font-size:clamp(44px,5vw,80px);line-height:1;display:block}
+.facts small{color:var(--mute)}
+@media(max-width:800px){.quarry .top{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.facts div{border-right:0;border-bottom:1px solid var(--line);padding-left:0!important}}
+
+/* markets ticker */
+.ticker{background:var(--red);overflow:hidden;white-space:nowrap;padding:18px 0}
+.ticker .row{display:inline-flex;gap:48px;animation:tick 40s linear infinite;font-family:var(--disp);font-weight:700;font-size:clamp(28px,3.4vw,48px);text-transform:uppercase}
+.ticker .row span::after{content:"✦";margin-left:48px;font-size:.6em;vertical-align:middle;opacity:.7}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* factory */
+.factory{display:grid;grid-template-columns:1fr 1fr;min-height:100vh}
+.factory .im{position:relative;overflow:hidden}
+.factory .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.factory .t{padding:clamp(60px,8vw,120px) var(--pad);display:flex;flex-direction:column;justify-content:center;gap:24px;background:var(--ink2)}
+.factory h2{font-size:clamp(52px,7vw,112px)}
+.factory p{color:rgba(255,255,255,.8);max-width:480px}
+.line{display:grid;gap:0;margin-top:12px;border-top:1px solid var(--line-d)}
+.line div{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line-d);font-size:15px}
+.line div span:last-child{color:var(--mute-d);text-align:right}
+@media(max-width:900px){.factory{grid-template-columns:1fr}.factory .im{height:60vh}}
+
+/* collections */
+.coll{background:var(--paper);color:var(--ink);padding:clamp(90px,12vw,170px) var(--pad)}
+.coll h2{font-size:clamp(56px,8vw,130px);margin-bottom:48px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{position:relative;aspect-ratio:3/4;overflow:hidden;background:#ccc;text-decoration:none;color:#fff}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.card:hover img{transform:scale(1.06)}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.72),transparent 55%)}
+.card div{position:absolute;z-index:1;left:18px;right:18px;bottom:16px}
+.card h3{font-family:var(--disp);font-weight:700;font-size:34px;text-transform:uppercase;line-height:1}
+.card p{font-size:13px;opacity:.85;margin-top:4px}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+
+/* fairs */
+.fairs{padding:clamp(90px,12vw,170px) var(--pad);display:grid;grid-template-columns:1fr 1.4fr;gap:48px}
+.fairs h2{font-size:clamp(52px,7vw,112px)}
+.fair{display:grid;grid-template-columns:auto 1fr;gap:24px;padding:26px 0;border-top:1px solid var(--line-d)}
+.fair:last-child{border-bottom:1px solid var(--line-d)}
+.fair b{font-family:var(--disp);font-weight:700;font-size:36px;text-transform:uppercase;line-height:1}
+.fair p{color:var(--mute-d);font-size:15px;margin-top:6px}
+.fair .where{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#ff5a5f;padding-top:8px;min-width:120px}
+@media(max-width:900px){.fairs{grid-template-columns:1fr}.fair{grid-template-columns:1fr;gap:6px}}
+
+/* contact */
+.contact{position:relative;padding:clamp(110px,14vw,220px) var(--pad) clamp(80px,10vw,140px);overflow:hidden}
+.contact .bg{position:absolute;inset:0;background:url(img/s2.webp) center/cover;opacity:.22}
+.contact .in{position:relative}
+.contact h2{font-size:clamp(70px,14vw,250px)}
+.contact h2 span{color:var(--red)}
+.contact p{max-width:520px;color:rgba(255,255,255,.85);margin:24px 0 32px}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+footer{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:56px var(--pad) 96px;border-top:1px solid var(--line-d);font-size:14px;color:var(--mute-d)}
+footer b{display:block;color:#fff;margin-bottom:8px;font-weight:600}
+footer a{text-decoration:none}
+@media(max-width:800px){footer{grid-template-columns:1fr}}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}.ticker .row{animation:none}
+  .hero{height:100vh}.turn{height:auto}.turn .stick{position:relative}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="logo" href="#top"><img src="img/logo.png" alt="Ayyıldız Marble" width="131" height="30"></a>
+  <ul>
+    <li><a href="#stones">Stones</a></li>
+    <li><a href="#quarry">Quarry</a></li>
+    <li><a href="#factory">Factory</a></li>
+    <li><a href="#fairs">Fairs</a></li>
+  </ul>
+  <div class="right"><button class="lang" id="lang" aria-label="Dil / Language">TR</button><a class="btn red" href="#contact">Get a quote</a></div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="stick">
+    <div class="bg" id="heroBg" role="img" aria-label="Aerial view of the Ayyıldız Rising Star marble quarry terraces"></div>
+    <div class="shade"></div>
+    <div class="copy">
+      <h1 class="disp">Grey marble,<br><span>straight</span> from the source.</h1>
+      <p>Since 1987 we have quarried, cut and finished our own grey marble in İscehisar, Afyonkarahisar — and shipped it to more than a hundred companies worldwide.</p>
+    </div>
+    <div class="stats">
+      <div><b>1987</b><small>Founded in İscehisar</small></div>
+      <div><b>250 ha</b><small>Own licensed quarry</small></div>
+      <div><b>60,000 t</b><small>Block marble per year</small></div>
+      <div><b>90%</b><small>Of production exported</small></div>
+    </div>
+  </div>
+</header>
+
+<section class="turn" id="stones">
+  <div class="stick">
+    <div class="count label"><span>Our stones</span><b id="cnt">01 / 04</b></div>
+    <div class="grid">
+      <div class="slabwrap"><div class="slab" id="slab">
+        <div class="f fr" id="ff"></div><div class="f b" id="fb"></div><div class="e r"></div><div class="e l"></div>
+      </div><div class="shadow"></div></div>
+      <div class="info">
+        <div class="st on"><div class="label">Grey · Own quarry</div><h2 class="disp">Rising Star</h2><p>Our signature grey with fine white veining — one of the largest grey marble reserves in Türkiye, quarried by us since 2008.</p><div class="spec"><div><small>Thickness</small><span>1.2 · 2 · 3 cm</span></div><div><small>Finish</small><span>Polished · Honed · Sandblasted</span></div></div></div>
+        <div class="st"><div class="label">Black</div><h2 class="disp">Alexandrette Black</h2><p>Deep black with sharp white lightning veins. A statement stone for feature walls, bathrooms and furniture.</p><div class="spec"><div><small>Thickness</small><span>1.2 · 2 · 3 cm</span></div><div><small>Finish</small><span>Polished · Honed · Brushed</span></div></div></div>
+        <div class="st"><div class="label">Boutique</div><h2 class="disp">Boutique Collections</h2><p>Rare, exotic stones selected block by block for hotels, villas and one-off interiors.</p><div class="spec"><div><small>Format</small><span>Slabs · Cut-to-size</span></div><div><small>Supply</small><span>Limited lots</span></div></div></div>
+        <div class="st"><div class="label">Mosaic</div><h2 class="disp">Mosaics</h2><p>Basketweave, herringbone, hexagon and brick patterns, cut from our own marble on the same line.</p><div class="spec"><div><small>Patterns</small><span>5+</span></div><div><small>Use</small><span>Floors · Walls · Wet areas</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quarry" id="quarry">
+  <div class="top">
+    <h2 class="disp rv">Rising Star<br><span>Quarry</span></h2>
+    <p class="rv">Opened in 2008 on a 250-hectare licensed area, it is one of the biggest grey quarries in Türkiye. Blocks leave the bench for our own factory down the road — or straight to buyers in China, India and Taiwan.</p>
+  </div>
+  <div class="qimg"><img src="img/s4.webp" alt="Rising Star marble quarry, aerial view of the terraces" loading="lazy" id="qImg"></div>
+  <div class="facts">
+    <div class="rv"><b>2008</b><small>Quarry opened</small></div>
+    <div class="rv"><b>2,000 m³</b><small>Monthly block capacity</small></div>
+    <div class="rv"><b>250 ha</b><small>Licensed area</small></div>
+  </div>
+</section>
+
+<div class="ticker" aria-label="Export markets"><div class="row" id="tick"><span>USA</span><span>China</span><span>India</span><span>Taiwan</span><span>Australia</span><span>UAE</span><span>Saudi Arabia</span><span>Kuwait</span><span>Israel</span><span>Indonesia</span></div></div>
+
+<section class="factory" id="factory">
+  <div class="im"><img src="img/mission.webp" alt="Ayyıldız Marble headquarters and factory in İscehisar" loading="lazy"></div>
+  <div class="t">
+    <div class="label rv" style="color:#ff5a5f">Factory · İscehisar OSB</div>
+    <h2 class="disp rv">Running<br>24 hours a day.</h2>
+    <p class="rv">A fully automatic, integrated plant on 32,000 m² of open yard. Our latest investment doubled slab output — from 30,000 to 60,000 m² per month.</p>
+    <div class="line rv">
+      <div><span>Gangsaws</span><span>+3 new</span></div>
+      <div><span>Slab polishing &amp; cutting</span><span>New line</span></div>
+      <div><span>Slab epoxy</span><span>New line</span></div>
+      <div><span>Monthly slab output</span><span>60,000 m²</span></div>
+      <div><span>Team</span><span>~100 specialists</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="coll">
+  <h2 class="disp rv">Collections</h2>
+  <div class="cards">
+    <a class="card rv" href="#contact"><img src="img/rs.webp" alt="Rising Star grey marble slab" loading="lazy"><div><h3>Rising Star</h3><p>Grey</p></div></a>
+    <a class="card rv" href="#contact"><img src="img/alex.webp" alt="Alexandrette Black marble" loading="lazy"><div><h3>Alexandrette</h3><p>Black</p></div></a>
+    <a class="card rv" href="#contact"><img src="img/boutique.webp" alt="Boutique exotic marble collection" loading="lazy"><div><h3>Boutique</h3><p>Exotic</p></div></a>
+    <a class="card rv" href="#contact"><img src="img/mosaic.webp" alt="Basketweave marble mosaic" loading="lazy"><div><h3>Mosaic</h3><p>Patterns</p></div></a>
+  </div>
+</section>
+
+<section class="fairs" id="fairs">
+  <h2 class="disp rv">Meet us<br>at the fairs.</h2>
+  <div>
+    <div class="fair rv"><span class="where">Orlando, USA</span><div><b>Coverings</b><p>Kansas Grey and Rising Star on show for North American architects and distributors.</p></div></div>
+    <div class="fair rv"><span class="where">Xiamen, China</span><div><b>Xiamen Stone Fair</b><p>Our block business in Asia, face to face with the world's largest stone buyers.</p></div></div>
+    <div class="fair rv"><span class="where">Afyonkarahisar</span><div><b>Block Marble Fair</b><p>At home in Türkiye's marble capital, with domestic and international partners.</p></div></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="bg"></div>
+  <div class="in">
+    <div class="label rv" style="color:#ff5a5f">Blocks · Slabs · Cut-to-size</div>
+    <h2 class="disp rv">Let's<br><span>quote.</span></h2>
+    <p class="rv">Tell us the stone, thickness and quantity. We reply with stock photos, samples and a price — usually the same day.</p>
+    <div class="acts rv">
+      <a class="btn red" href="mailto:info@ayyildizmarble.com">info@ayyildizmarble.com</a>
+      <a class="btn" href="tel:+902723412880">+90 272 341 28 80</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div><b>Ayyıldız Mermer Ltd. Şti.</b>Organize Sanayi Bölgesi 3. Cadde 4. Sokak No:11<br>İscehisar / Afyonkarahisar, Türkiye</div>
+  <div><b>Contact</b>T +90 272 341 28 80<br>F +90 272 341 43 43</div>
+  <div><b>Follow</b><a href="https://instagram.com/ayyildizmarble">Instagram</a> · <a href="https://tr-tr.facebook.com/ayyildizmarble">Facebook</a></div>
+</footer>
+
+<div class="ribbon">Concept preview by <b>ai-ulu</b> · photos © Ayyıldız Marble</div>
+
+<script>
+(()=>{
+// i18n: EN is the markup; TR swaps innerHTML of elements whose EN innerHTML is a key here
+const TR={
+"Stones":"Taşlar","Quarry":"Ocak","Factory":"Fabrika","Fairs":"Fuarlar","Get a quote":"Teklif alın",
+"Grey marble,<br><span>straight</span> from the source.":"Gri mermer,<br><span>doğrudan</span> kaynağından.",
+"Since 1987 we have quarried, cut and finished our own grey marble in İscehisar, Afyonkarahisar — and shipped it to more than a hundred companies worldwide.":"1987'den beri İscehisar, Afyonkarahisar'da kendi gri mermerimizi çıkarıyor, kesiyor ve işliyoruz — ve dünya genelinde yüzden fazla firmaya gönderiyoruz.",
+"Founded in İscehisar":"İscehisar'da kuruldu","Own licensed quarry":"Kendi ruhsatlı ocağımız","Block marble per year":"Yıllık blok mermer","Of production exported":"Üretimin ihracatı",
+"Our stones":"Taşlarımız",
+"Grey · Own quarry":"Gri · Kendi ocağımız",
+"Our signature grey with fine white veining — one of the largest grey marble reserves in Türkiye, quarried by us since 2008.":"İnce beyaz damarlı imza grimiz — Türkiye'nin en büyük gri mermer rezervlerinden biri, 2008'den beri bizim tarafımızdan çıkarılıyor.",
+"Thickness":"Kalınlık","Finish":"Yüzey","Format":"Format","Supply":"Tedarik","Patterns":"Desenler","Use":"Kullanım",
+"Polished · Honed · Sandblasted":"Cilalı · Honlu · Kumlanmış","Polished · Honed · Brushed":"Cilalı · Honlu · Fırçalı",
+"Black":"Siyah",
+"Deep black with sharp white lightning veins. A statement stone for feature walls, bathrooms and furniture.":"Keskin beyaz şimşek damarlı derin siyah. Vurgu duvarları, banyolar ve mobilya için iddialı bir taş.",
+"Boutique Collections":"Butik Koleksiyonlar",
+"Rare, exotic stones selected block by block for hotels, villas and one-off interiors.":"Oteller, villalar ve özel iç mekânlar için blok blok seçilmiş nadir, egzotik taşlar.",
+"Slabs · Cut-to-size":"Plaka · Ölçüye kesim","Limited lots":"Sınırlı partiler",
+"Mosaics":"Mozaikler",
+"Basketweave, herringbone, hexagon and brick patterns, cut from our own marble on the same line.":"Hasır, balıksırtı, altıgen ve tuğla desenler — kendi mermerimizden, aynı hatta kesilir.",
+"Floors · Walls · Wet areas":"Zemin · Duvar · Islak hacim",
+"Rising Star<br><span>Quarry</span>":"Rising Star<br><span>Ocağı</span>",
+"Opened in 2008 on a 250-hectare licensed area, it is one of the biggest grey quarries in Türkiye. Blocks leave the bench for our own factory down the road — or straight to buyers in China, India and Taiwan.":"2008'de 250 hektarlık ruhsatlı alanda açıldı; Türkiye'nin en büyük gri mermer ocaklarından biri. Bloklar ocaktan doğrudan kendi fabrikamıza — ya da Çin, Hindistan ve Tayvan'daki alıcılara gider.",
+"Quarry opened":"Ocağın açılışı","Monthly block capacity":"Aylık blok kapasitesi","Licensed area":"Ruhsatlı alan",
+"China":"Çin","India":"Hindistan","Taiwan":"Tayvan","Australia":"Avustralya","UAE":"BAE","Saudi Arabia":"Suudi Arabistan","Kuwait":"Kuveyt","Indonesia":"Endonezya","USA":"ABD","Israel":"İsrail",
+"Factory · İscehisar OSB":"Fabrika · İscehisar OSB",
+"Running<br>24 hours a day.":"Günde<br>24 saat üretim.",
+"A fully automatic, integrated plant on 32,000 m² of open yard. Our latest investment doubled slab output — from 30,000 to 60,000 m² per month.":"32.000 m² açık alanda tam otomatik, entegre tesis. Son yatırımımızla plaka üretimi ikiye katlandı — ayda 30.000 m²'den 60.000 m²'ye.",
+"Gangsaws":"Katrak","+3 new":"+3 yeni","Slab polishing &amp; cutting":"Plaka cila ve kesim","New line":"Yeni hat","Slab epoxy":"Plaka epoksi","Monthly slab output":"Aylık plaka üretimi","Team":"Ekip","~100 specialists":"~100 uzman",
+"Collections":"Koleksiyonlar","Grey":"Gri","Exotic":"Egzotik",
+"Meet us<br>at the fairs.":"Fuarlarda<br>görüşelim.",
+"Kansas Grey and Rising Star on show for North American architects and distributors.":"Kansas Grey ve Rising Star, Kuzey Amerikalı mimar ve distribütörlerin karşısında.",
+"Our block business in Asia, face to face with the world's largest stone buyers.":"Asya'daki blok işimiz, dünyanın en büyük taş alıcılarıyla yüz yüze.",
+"At home in Türkiye's marble capital, with domestic and international partners.":"Türkiye'nin mermer başkentinde, yerli ve yabancı ortaklarımızla.",
+"Block Marble Fair":"Blok Mermer Fuarı",
+"Blocks · Slabs · Cut-to-size":"Blok · Plaka · Ölçüye kesim",
+"Let's<br><span>quote.</span>":"Teklif<br><span>verelim.</span>",
+"Tell us the stone, thickness and quantity. We reply with stock photos, samples and a price — usually the same day.":"Taşı, kalınlığı ve miktarı yazın. Stok fotoğrafları, numune ve fiyatla — çoğu zaman aynı gün — dönelim.",
+"Contact":"İletişim","Follow":"Takip edin",
+"Concept preview by <b>ai-ulu</b> · photos © Ayyıldız Marble":"<b>ai-ulu</b> konsept önizlemesi · fotoğraflar © Ayyıldız Mermer"
+};
+const META={en:[document.title,document.querySelector('meta[name=description]').content],
+ tr:["Ayyıldız Mermer — 1987'den Beri Kendi Ocağımızdan Gri Mermer","Ayyıldız Mermer, İscehisar / Afyonkarahisar. 250 hektarlık kendi ocağımızdan Rising Star gri mermer: blok, plaka ve ölçüye kesim; 1996'dan beri ihracat."]};
+const i18n=[];
+document.querySelectorAll('body *:not(script):not(style)').forEach(el=>{
+  if(el.closest('[data-i18n]'))return;
+  const h=el.innerHTML.trim();
+  if(TR[h]!==undefined){el.dataset.i18n='';i18n.push([el,h,TR[h]])}
+});
+const langBtn=document.getElementById('lang');
+function setLang(l){
+  i18n.forEach(([el,en,tr])=>el.innerHTML=l==='tr'?tr:en);
+  document.documentElement.lang=l;document.title=META[l][0];
+  document.querySelector('meta[name=description]').content=META[l][1];
+  langBtn.textContent=l==='tr'?'EN':'TR';
+  try{localStorage.setItem('lang',l)}catch(e){}
+}
+let lang='en';
+try{lang=new URLSearchParams(location.search).get('lang')||localStorage.getItem('lang')||(navigator.language||'').slice(0,2)}catch(e){}
+setLang(lang==='tr'?'tr':'en');
+langBtn.addEventListener('click',()=>setLang(document.documentElement.lang==='tr'?'en':'tr'));
+
+// ticker: duplicate once so the -50% loop is seamless
+const tick=document.getElementById('tick');tick.append(...[...tick.children].map(n=>n.cloneNode(true)));
+
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $=s=>document.querySelector(s), clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)), lerp=(a,b,t)=>a+(b-a)*t;
+const prog=el=>{const r=el.getBoundingClientRect();return clamp(-r.top/(r.height-innerHeight))};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// turntable: 4 stones, slab turns 180° between each; the hidden face swaps texture while edge-on
+const STONES=[{img:'img/rs.webp',bg:'#cfcdc8',fg:'#0d0d0d'},{img:'img/alex.webp',bg:'#0d0d0d',fg:'#ffffff'},{img:'img/boutique.webp',bg:'#2a211c',fg:'#ffffff'},{img:'img/mosaic.webp',bg:'#e6e3dd',fg:'#0d0d0d'}];
+const turn=$('#stones'), slab=$('#slab'), ff=$('#ff'), fb=$('#fb'), sts=[...document.querySelectorAll('.st')], cnt=$('#cnt');
+STONES.forEach(s=>{const i=new Image();i.src=s.img});
+let cur=-1;
+function drawTurn(p){
+  const steps=STONES.length-1, t=p*steps, idx=Math.min(steps,Math.round(t));
+  const ang=t*180, tilt=Math.sin(p*Math.PI)*8;
+  slab.style.transform=`rotateX(${tilt}deg) rotateY(${-ang}deg) rotateZ(${lerp(-4,4,p)}deg)`;
+  // front shows even stones, back shows odd stones
+  const even=Math.floor(t/2)*2, odd=Math.floor((t+1)/2)*2-1;
+  ff.style.backgroundImage=`url(${STONES[Math.min(steps,even)].img})`;
+  fb.style.backgroundImage=`url(${STONES[clamp(odd,0,steps)].img})`;
+  if(idx!==cur){cur=idx;sts.forEach((el,i)=>el.classList.toggle('on',i===idx));turn.style.backgroundColor=STONES[idx].bg;turn.style.color=STONES[idx].fg;cnt.textContent=`0${idx+1} / 0${STONES.length}`;}
+}
+const ribbon=$('.ribbon'), heroBg=$('#heroBg'), hero=$('.hero'), nav=$('#nav'), qImg=$('#qImg');
+function frame(){
+  const hp=prog(hero);heroBg.style.transform=`scale(${lerp(1.25,1.02,hp)})`;
+  nav.classList.toggle('solid',scrollY>innerHeight*.6);
+  ribbon.classList.toggle('hide',scrollY<innerHeight*.5); // keep hero stats clear
+  drawTurn(prog(turn));
+  const r=qImg.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)qImg.style.setProperty('--py',(r.top/innerHeight*-12).toFixed(2)+'%');
+}
+if(reduce){drawTurn(0);return}
+let busy=false;addEventListener('scroll',()=>{if(!busy){busy=true;requestAnimationFrame(()=>{frame();busy=false})}},{passive:true});
+addEventListener('resize',frame);frame();
+})();
+</script>
+</body>
+</html>
